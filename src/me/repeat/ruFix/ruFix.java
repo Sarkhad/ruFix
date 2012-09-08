@@ -226,7 +226,9 @@ public class ruFix extends JavaPlugin {
     	    	FileReader input;
 				try {
 					input = new FileReader(file);
-	    	    	BufferedReader bufRead = new BufferedReader(input);
+					
+	    	    	@SuppressWarnings("resource")
+					BufferedReader bufRead = new BufferedReader(input);
 	    	    	
 	    	    	// read remark
 	    	    	bufRead.readLine();
@@ -241,10 +243,8 @@ public class ruFix extends JavaPlugin {
 //	    	    	System.out.print(toGame.length);
 
 				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
     	    }

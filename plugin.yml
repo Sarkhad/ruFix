@@ -1,7 +1,7 @@
 name: ruFix
 main: me.repeat.ruFix.ruFix
-version: 0.59
-author: repeat, toxuin
+version: 0.60
+author: repeat, toxuin, d_art
 description: BugFix for Russian chat
 
 commands:
